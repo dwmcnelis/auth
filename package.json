@@ -1,0 +1,31 @@
+{
+	"name": "auth",
+	"version": "1.0.0",
+	"description": "express auth server",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon src/index.js --exec babel-node",
+		"build": "babel src -d dist",
+		"serve": "node dist/index.js"
+	},
+	"keywords": [],
+	"license": "MIT",
+	"dependencies": {
+		"axios": "^0.27.2",
+		"bcrypt": "^5.0.1",
+		"cookie-session": "^2.0.0",
+		"dotenv": "^16.0.1",
+		"ejs": "^3.1.8",
+		"express": "^4.18.1",
+		"express-ejs-layouts": "^2.5.1",
+		"jose": "^4.8.3",
+		"openid-client": "^5.1.8",
+		"simple-oauth2": "^4.3.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-stage-2": "^6.24.1",
+		"nodemon": "^1.17.5"
+	}
+}
